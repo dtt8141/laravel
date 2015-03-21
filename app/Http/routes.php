@@ -14,6 +14,8 @@ Route::get('/', 'HomeController@index');
 Route::get('home', 'HomeController@index');
 Route::get('product_seeder', 'HomeController@product_seeder');
 Route::get('sale_seeder', 'HomeController@sale_seeder');
+Route::get('customer_seeder', 'HomeController@customer_seeder');
+Route::get('distributor_seeder', 'HomeController@distributor_seeder');
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

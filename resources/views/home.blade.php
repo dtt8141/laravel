@@ -82,7 +82,28 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="distributor">...</div>
+                            <div role="tabpanel" class="tab-pane" id="distributor">
+                                 <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Address</th>
+                                            <th>Phone</th>                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach( $data['distributors'] as $datum )
+                                        <tr>
+                                            <td>{{$datum->id}}</td>
+                                            <td>{{$datum->name}}</td>
+                                            <td>{{$datum->address}}</td>
+                                            <td>{{$datum->phone}}</td>      
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
                             <div role="tabpanel" class="tab-pane" id="sales">
                                <div class="row">
                                    <div class="col-xs-6"> <table class="table table-bordered table-hover">
@@ -114,7 +135,29 @@
                                    </div>
                                </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="customers">...</div>
+                            <div role="tabpanel" class="tab-pane" id="customers">
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Address</th>
+                                            <th>Phone</th>                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach( $data['customers'] as $datum )
+                                        <tr>
+                                            <td>{{$datum->id}}</td>
+                                            <td>{{$datum->name}}</td>
+                                            <td>{{$datum->address}}</td>
+                                            <td>{{$datum->phone}}</td>      
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
